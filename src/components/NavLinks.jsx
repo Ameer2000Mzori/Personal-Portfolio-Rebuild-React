@@ -4,9 +4,9 @@ const NavLinks = () => {
     <>
       <div className="nav-Links">
         <ul>
-          {NavBarData.map((nav) => {
+          {NavBarData.map((nav, index) => {
             return (
-              <li>
+              <li key={index}>
                 <a href={`#${nav.title}`}>{nav.title}</a>
               </li>
             )
