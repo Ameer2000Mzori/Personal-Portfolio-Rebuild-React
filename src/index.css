@@ -980,6 +980,15 @@ body {
   .skills-Cards-Wrap
   .skills-Range-Wrap
   .skills-Range
+  .skills-Range-Fill.Git {
+  width: 90%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
   .skills-Range-Fill.Css {
   width: 85%;
 }
@@ -990,7 +999,16 @@ body {
   .skills-Range-Wrap
   .skills-Range
   .skills-Range-Fill.Scss {
-  width: 60%;
+  width: 73%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Tailwind {
+  width: 90%;
 }
 
 .skills
@@ -999,7 +1017,7 @@ body {
   .skills-Range-Wrap
   .skills-Range
   .skills-Range-Fill.JavaScript {
-  width: 55%;
+  width: 75%;
 }
 
 .skills
@@ -1008,7 +1026,52 @@ body {
   .skills-Range-Wrap
   .skills-Range
   .skills-Range-Fill.TypeScript {
-  width: 35%;
+  width: 30%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Postman {
+  width: 30%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Webpack {
+  width: 58%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Babel {
+  width: 30%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.React {
+  width: 60%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Mern {
+  width: 62%;
 }
 
 @media screen and (max-width: 1000px) {

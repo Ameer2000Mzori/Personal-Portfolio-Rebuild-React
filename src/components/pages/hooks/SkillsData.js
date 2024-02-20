@@ -11,6 +11,7 @@ export const SkillsData = [
     skillLvl: `95%`,
     skillText:
       ' i have mastered my HTML from Udemy course called ( Web Design for Beginners: Real World Coding in HTML & CSS ) 17HRS made by Brad Schiff ',
+    skillRange: '',
   },
   {
     skillName: 'CSS',
@@ -21,7 +22,7 @@ export const SkillsData = [
   },
   {
     skillName: 'SCSS',
-    skillLvl: `85%`,
+    skillLvl: `73%`,
     skillText:
       ' i have learned SCSS from Youtube course called ( Sass Tutorial for Beginners - CSS With Superpowers ) 2HRS made by freeCodeCamp.org ',
     skillRange: 'Scss',
