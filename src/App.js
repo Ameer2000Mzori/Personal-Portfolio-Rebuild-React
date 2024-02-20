@@ -331,7 +331,7 @@ function App() {
               <div className="name-Email-Wrap">
                 <div className="name-Wrap">
                   <div className="name-Text-Wrap">
-                    <h1 className="label-Name" for="">
+                    <h1 className="label-Name" htmlFor="">
                       YOUR FULL NAME
                     </h1>
                     <span className="label-Must">*</span>
@@ -340,7 +340,7 @@ function App() {
                 </div>
                 <div className="email-Wrap">
                   <div className="email-Text-Wrap">
-                    <h1 className="label-Email" for="">
+                    <h1 className="label-Email" htmlFor="">
                       YOUR EMAIL ADDRESS
                     </h1>
                     <span className="label-Must">*</span>
@@ -350,7 +350,7 @@ function App() {
               </div>
               <div className="subject-Wrap">
                 <div className="subject-Text-Wrap">
-                  <h1 className="label-Subject" for="">
+                  <h1 className="label-Subject" htmlFor="">
                     YOUR SUBJECT
                   </h1>
                   <span className="subject-Label-Must">*</span>
@@ -360,7 +360,7 @@ function App() {
 
               <div className="message-Wrap">
                 <div className="message-Text-Wrap">
-                  <h1 className="label-Message" for="">
+                  <h1 className="label-Message" htmlFor="">
                     YOUR MESSAGE
                   </h1>
                   <span className="message-Label-Must">*</span>
