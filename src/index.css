@@ -1011,15 +1011,6 @@ body {
   width: 35%;
 }
 
-.skills
-  .right-Skill-Skills
-  .skills-Cards-Wrap
-  .skills-Range-Wrap
-  .skills-Range
-  .skills-Range-Fill.Tools {
-  width: 50%;
-}
-
 @media screen and (max-width: 1000px) {
   .skills .left-Deco-Skills {
     height: 2050px;
