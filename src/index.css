@@ -538,9 +538,9 @@ body {
 }
 
 .header .header-Top-Bottom .bottom-Text {
-  font-size: 15rem;
+  font-size: 8rem;
   position: absolute;
-  top: -100%;
+  top: -50%;
   left: 0%;
   z-index: -19;
   font-family: 'Caveat', cursive;
@@ -664,9 +664,10 @@ body {
   }
 
   .header .header-Top-Bottom .bottom-Text {
-    font-size: 8rem;
-    top: 0%;
-    left: 0%;
+    display: none;
+    /* font-size: 4rem;
+      top: 0%;
+      left: 0%; */
   }
 }
 
@@ -774,8 +775,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(500px, 100%, 1000px);
-  margin-top: 5rem;
+  height: clamp(500px, 100%, 5000px);
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 .skills .left-Deco-Skills {
@@ -869,8 +871,9 @@ body {
 }
 
 .skills .right-Skill-Skills .skills-Cards-Wrap {
-  height: 80%;
+  height: clamp(1000px, 100%, 5000px);
   width: 100%;
+  overflow: auto;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -881,7 +884,7 @@ body {
 }
 
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card {
-  width: 500px;
+  width: 420px;
   height: 300px;
 }
 
@@ -980,6 +983,15 @@ body {
   .skills-Cards-Wrap
   .skills-Range-Wrap
   .skills-Range
+  .skills-Range-Fill.Git {
+  width: 90%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
   .skills-Range-Fill.Css {
   width: 85%;
 }
@@ -990,7 +1002,16 @@ body {
   .skills-Range-Wrap
   .skills-Range
   .skills-Range-Fill.Scss {
-  width: 60%;
+  width: 73%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Tailwind {
+  width: 90%;
 }
 
 .skills
@@ -999,7 +1020,7 @@ body {
   .skills-Range-Wrap
   .skills-Range
   .skills-Range-Fill.JavaScript {
-  width: 55%;
+  width: 75%;
 }
 
 .skills
@@ -1008,7 +1029,7 @@ body {
   .skills-Range-Wrap
   .skills-Range
   .skills-Range-Fill.TypeScript {
-  width: 35%;
+  width: 30%;
 }
 
 .skills
@@ -1016,8 +1037,44 @@ body {
   .skills-Cards-Wrap
   .skills-Range-Wrap
   .skills-Range
-  .skills-Range-Fill.Tools {
-  width: 50%;
+  .skills-Range-Fill.Postman {
+  width: 30%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Webpack {
+  width: 58%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Babel {
+  width: 30%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.React {
+  width: 60%;
+}
+
+.skills
+  .right-Skill-Skills
+  .skills-Cards-Wrap
+  .skills-Range-Wrap
+  .skills-Range
+  .skills-Range-Fill.Mern {
+  width: 62%;
 }
 
 @media screen and (max-width: 1000px) {
