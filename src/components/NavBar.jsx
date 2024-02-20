@@ -19,25 +19,13 @@ const NavBar = () => {
         <div className="nav-Links">
           <ul>
             <li>
-              <a href="#">HOME</a>
+              <a href="#header">HOME</a>
             </li>
             <li>
-              <a href="#">ABOUT</a>
+              <a href="#">Skills</a>
             </li>
             <li>
               <a href="#">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#">GALLERY</a>
-            </li>
-            <li>
-              <a href="#">BLOG</a>
-            </li>
-            <li>
-              <a href="#">CLIENTS</a>
-            </li>
-            <li>
-              <a href="#">PRICING</a>
             </li>
             <li>
               <a href="#">CONTACT</a>
