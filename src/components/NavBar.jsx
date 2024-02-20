@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavBarData } from './NavBarData.js'
+import NavLinks from './NavLinks'
 const NavBar = () => {
   return (
     <>
@@ -10,23 +10,13 @@ const NavBar = () => {
       </div>
 
       {/* <!-- navbar --> */}
-      <nav className="navbar active">
+      <nav className="navbar ">
         <div className="decoration-Bar">
           <div className="cercle-One"></div>
           <div className="line-El"></div>
           <div className="cercle-Two"></div>
         </div>
-        <div className="nav-Links">
-          <ul>
-            {NavBarData.map((nav) => {
-              return (
-                <li>
-                  <a href={`#${nav.title}`}>{nav.title}</a>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
+        <NavLinks />
       </nav>
     </>
   )
