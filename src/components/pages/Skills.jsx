@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { SkillsData } from './hooks/SkillsData.js'
 const Skills = () => {
   return (
     <>
@@ -19,120 +19,28 @@ const Skills = () => {
             </div>
           </div>
           <div className="skills-Cards-Wrap">
-            <div className="skills-Card">
-              <div className="name-Lang-Num">
-                <h2 className="skills-Name">HTML</h2>
-                <h2 className="skills-Num">95%</h2>
-              </div>
-              <p className="skills-P">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit facere, nobis nisi, blanditiis laborum, cum
-                eveniet id quas consequatur modi in pariatur error est hic
-                voluptates quos beatae amet tempora?
-              </p>
-              <div className="skills-Range-Wrap">
-                <div className="skills-Range">
-                  <div className="skills-Range-Fill">
-                    <div className="skills-Range-Circile"></div>
+            {SkillsData.map((cardData, index) => {
+              return (
+                <div className="skills-Card">
+                  <div className="name-Lang-Num">
+                    <h2 className="skills-Name">{cardData.skillName}</h2>
+                    <h2 className="skills-Num">{cardData.skillLvl}</h2>
+                  </div>
+                  <p className="skills-P"> {cardData.skillText}</p>
+                  <div className="skills-Range-Wrap">
+                    <div className="skills-Range">
+                      <div
+                        className={`skills-Range-Fill ${cardData.skillRange}`}
+                      >
+                        <div
+                          className={`skills-Range-Circile ${cardData.skillRange}`}
+                        ></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="skills-Card">
-              <div className="name-Lang-Num">
-                <h2 className="skills-Name">CSS</h2>
-                <h2 className="skills-Num">85%</h2>
-              </div>
-              <p className="skills-P">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit facere, nobis nisi, blanditiis laborum, cum
-                eveniet id quas consequatur modi in pariatur error est hic
-                voluptates quos beatae amet tempora?
-              </p>
-              <div className="skills-Range-Wrap">
-                <div className="skills-Range">
-                  <div className="skills-Range-Fill Css">
-                    <div className="skills-Range-Circile Css"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="skills-Card">
-              <div className="name-Lang-Num">
-                <h2 className="skills-Name">SCSS</h2>
-                <h2 className="skills-Num">60%</h2>
-              </div>
-              <p className="skills-P">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit facere, nobis nisi, blanditiis laborum, cum
-                eveniet id quas consequatur modi in pariatur error est hic
-                voluptates quos beatae amet tempora?
-              </p>
-              <div className="skills-Range-Wrap">
-                <div className="skills-Range">
-                  <div className="skills-Range-Fill Scss">
-                    <div className="skills-Range-Circile Scss"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="skills-Card">
-              <div className="name-Lang-Num">
-                <h2 className="skills-Name">JAVASCRIPT</h2>
-                <h2 className="skills-Num">55%</h2>
-              </div>
-              <p className="skills-P">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit facere, nobis nisi, blanditiis laborum, cum
-                eveniet id quas consequatur modi in pariatur error est hic
-                voluptates quos beatae amet tempora?
-              </p>
-              <div className="skills-Range-Wrap">
-                <div className="skills-Range">
-                  <div className="skills-Range-Fill JavaScript">
-                    <div className="skills-Range-Circile JavaScript"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="skills-Card">
-              <div className="name-Lang-Num">
-                <h2 className="skills-Name">TYPESCRIPT</h2>
-                <h2 className="skills-Num">35%</h2>
-              </div>
-              <p className="skills-P">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit facere, nobis nisi, blanditiis laborum, cum
-                eveniet id quas consequatur modi in pariatur error est hic
-                voluptates quos beatae amet tempora?
-              </p>
-              <div className="skills-Range-Wrap">
-                <div className="skills-Range">
-                  <div className="skills-Range-Fill TypeScript">
-                    <div className="skills-Range-Circile TypeScript"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="skills-Card">
-              <div className="name-Lang-Num">
-                <h2 className="skills-Name">TOOLS</h2>
-                <h2 className="skills-Num">50%</h2>
-              </div>
-              <p className="skills-P">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit facere, nobis nisi, blanditiis laborum, cum
-                eveniet id quas consequatur modi in pariatur error est hic
-                voluptates quos beatae amet tempora?
-              </p>
-              <div className="skills-Range-Wrap">
-                <div className="skills-Range">
-                  <div className="skills-Range-Fill Tools">
-                    <div className="skills-Range-Circile Tools"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              )
+            })}
           </div>
         </div>
       </section>
