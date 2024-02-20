@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavBarData } from './NavBarData.js'
 const NavBar = () => {
   return (
     <>
@@ -18,18 +18,13 @@ const NavBar = () => {
         </div>
         <div className="nav-Links">
           <ul>
-            <li>
-              <a href="#header">HOME</a>
-            </li>
-            <li>
-              <a href="#">Skills</a>
-            </li>
-            <li>
-              <a href="#">PROJECTS</a>
-            </li>
-            <li>
-              <a href="#">CONTACT</a>
-            </li>
+            {NavBarData.map((nav) => {
+              return (
+                <li>
+                  <a href={`#${nav.title}`}>{nav.title}</a>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </nav>

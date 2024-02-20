@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <>
       {/* <!--  Skills section --> */}
-      <section className="skills">
+      <section id="Skills" className="skills">
         <div className="left-Deco-Skills">
           <div className="skills-Cercle-One"></div>
           <div className="skills-Line-El"></div>
