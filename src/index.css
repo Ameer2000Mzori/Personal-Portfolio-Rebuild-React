@@ -538,9 +538,9 @@ body {
 }
 
 .header .header-Top-Bottom .bottom-Text {
-  font-size: 15rem;
+  font-size: 8rem;
   position: absolute;
-  top: -100%;
+  top: -50%;
   left: 0%;
   z-index: -19;
   font-family: 'Caveat', cursive;
@@ -664,9 +664,10 @@ body {
   }
 
   .header .header-Top-Bottom .bottom-Text {
-    font-size: 8rem;
-    top: 0%;
-    left: 0%;
+    display: none;
+    /* font-size: 4rem;
+      top: 0%;
+      left: 0%; */
   }
 }
 
@@ -774,8 +775,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: clamp(500px, 100%, 1000px);
-  margin-top: 5rem;
+  height: clamp(500px, 100%, 5000px);
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 .skills .left-Deco-Skills {
@@ -869,8 +871,9 @@ body {
 }
 
 .skills .right-Skill-Skills .skills-Cards-Wrap {
-  height: 80%;
+  height: clamp(1000px, 100%, 5000px);
   width: 100%;
+  overflow: auto;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -881,7 +884,7 @@ body {
 }
 
 .skills .right-Skill-Skills .skills-Cards-Wrap .skills-Card {
-  width: 500px;
+  width: 420px;
   height: 300px;
 }
 
