@@ -59,11 +59,11 @@ const Header = () => {
           <div className="right-Banner">
             <div className="img-Text-Circle"></div>
             <div className="text-Cont-1">
-              <h3>0.5</h3>
+              <h3>2</h3>
               <h4>YEARS OF EXPERINCE</h4>
             </div>
             <div className="text-Cont-2">
-              <h3>80+</h3>
+              <h3>110+</h3>
               <h4>COMPELETED PROJECTS</h4>
             </div>
           </div>
