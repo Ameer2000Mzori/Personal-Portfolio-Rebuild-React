@@ -1,6 +1,9 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react'
+import ProjectsLogic from './hooks/ProjectsLogic.js'
 const Projects = () => {
+  const [viewProject, setViewProjects] = useState(false)
+  const [projects, setProjects] = useState()
+
   return (
     <>
       {/* <!-- projects --> */}
@@ -13,9 +16,18 @@ const Projects = () => {
               <h1 className="P-T-2-2">Projects</h1>
             </div>
           </div>
-          <div className="Projects-Wrap"></div>
+          <div className="Projects-Wrap">
+            {projects.map((project) => {
+              ;<p>this is project text</p>
+            })}
+          </div>
           <div className="view-More-Btn-Wrap">
-            <button className="view-More-Btn">VIEW MORE</button>
+            <button
+              onClick={() => ProjectsLogic(setViewProjects, setProjects)}
+              className="view-More-Btn"
+            >
+              {viewProject ? 'View More' : 'View Less'}
+            </button>
           </div>
         </div>
         <div className="right-Projects-Wrap">
