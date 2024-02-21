@@ -1,8 +1,19 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import ProjectsLogic from './hooks/ProjectsLogic.js'
+
 const Projects = () => {
   const [viewProject, setViewProjects] = useState(false)
-  const [projects, setProjects] = useState()
+  const [projects, setProjects] = useState(6)
+
+  let data = axios.get(
+    `https://api.github.com/users/ameer2000mzori/repos?per_page=${projects}&sort=created`
+  )
+
+  useEffect(() => {
+    console.log('Projects', projects)
+    console.log('data', data)
+  }, [projects])
 
   return (
     <>
@@ -17,16 +28,16 @@ const Projects = () => {
             </div>
           </div>
           <div className="Projects-Wrap">
-            {projects.map((project) => {
-              ;<p>this is project text</p>
-            })}
+            {/* {projects.map((project) => {
+              return <p>this is project text</p>
+            })} */}
           </div>
           <div className="view-More-Btn-Wrap">
             <button
               onClick={() => ProjectsLogic(setViewProjects, setProjects)}
               className="view-More-Btn"
             >
-              {viewProject ? 'View More' : 'View Less'}
+              {viewProject ? 'View Less' : 'View More'}
             </button>
           </div>
         </div>
