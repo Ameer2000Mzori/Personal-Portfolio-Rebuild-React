@@ -5,14 +5,25 @@ import ProjectsLogic from './hooks/ProjectsLogic.js'
 const Projects = () => {
   const [viewProject, setViewProjects] = useState(false)
   const [projects, setProjects] = useState(6)
+  const [projectsData, setProjectsData] = useState([])
 
-  let data = axios.get(
-    `https://api.github.com/users/ameer2000mzori/repos?per_page=${projects}&sort=created`
-  )
+  const fetchGitHubRepos = async (projects) => {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/users/ameer2000mzori/repos?per_page=${projects}&sort=created`
+      )
+      const data = response.data
+      console.log(data)
+      setProjectsData(data)
+    } catch (error) {
+      console.error('Error fetching data: ', error)
+    }
+  }
 
   useEffect(() => {
-    console.log('Projects', projects)
-    console.log('data', data)
+    fetchGitHubRepos(projects)
+    console.log('this is our project', projects)
+    console.log('this is our projectdata ', projectsData)
   }, [projects])
 
   return (
