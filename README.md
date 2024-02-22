@@ -18,7 +18,10 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
+
 > This project is an existing personal portfolio that I have rebuilt using ReactJS. The purpose of the rebuild is to learn how to work with props, convert a standard project to React, and implement bug fixes. For a better understanding, please download or take a look at the sample images.
+
+
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
