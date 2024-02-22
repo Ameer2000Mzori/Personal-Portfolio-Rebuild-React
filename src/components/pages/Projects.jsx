@@ -22,8 +22,6 @@ const Projects = () => {
 
   useEffect(() => {
     fetchGitHubRepos(projects)
-    console.log('this is our project', projects)
-    console.log('this is our projectdata ', projectsData)
   }, [projects])
 
   return (
@@ -39,9 +37,48 @@ const Projects = () => {
             </div>
           </div>
           <div className="Projects-Wrap">
-            {/* {projects.map((project) => {
-              return <p>this is project text</p>
-            })} */}
+            {projectsData.map((info) => {
+              const { description, homepage, html_url, name, topics } = info
+
+              return (
+                <div className="project-Card" key={name}>
+                  <div className="project-Img-Wrap">
+                    <img
+                      className="project-Img"
+                      src={`https://raw.githubusercontent.com/Ameer2000Mzori/${name}/main/sample/1.png`}
+                      alt={name}
+                    />
+                  </div>
+                  <p className="project-P-Lang">{topics.join(', ')}.</p>
+                  <h3 className="project-Name-Title">{name}</h3>
+                  <p className="project-P-Text">{description}</p>
+                  <div className="project-Btn-Wrap">
+                    {homepage && (
+                      <div className="see-Project-Wrap">
+                        <a
+                          className="see-Code-Wrap-A"
+                          target="_blank"
+                          href={homepage}
+                          rel="noopener noreferrer"
+                        >
+                          SEE PROJECT
+                        </a>
+                      </div>
+                    )}
+                    <div className="see-Code-Wrap">
+                      <a
+                        className="see-Code-Wrap-A"
+                        target="_blank"
+                        href={html_url}
+                        rel="noopener noreferrer"
+                      >
+                        SEE CODE
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
           <div className="view-More-Btn-Wrap">
             <button
