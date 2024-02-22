@@ -385,6 +385,7 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   content: '';
+  text-decoration: none;
 }
 
 .header

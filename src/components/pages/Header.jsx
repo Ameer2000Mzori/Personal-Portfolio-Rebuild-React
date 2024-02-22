@@ -42,7 +42,7 @@ const Header = () => {
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ameer-ameen-82314425b/"
+                  href="https://www.linkedin.com/in/mohammed-ameen-82314425b/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -50,7 +50,13 @@ const Header = () => {
                 </a>
               </div>
               <div className="cv-Btn-Down">
-                <button className="down-Btn">DOWNLOAD CV</button>
+                <a
+                  className="down-Btn"
+                  href="https://drive.google.com/file/d/18dNjSJzkHlaf03X3ZKVyZeimaPwqS9AO/view?usp=sharing"
+                  target="_blank"
+                >
+                  DOWNLOAD CV
+                </a>
                 <div className="line-Decoration"></div>
                 <h4 className="text-Btn-Last">MY SKILLS</h4>
               </div>
