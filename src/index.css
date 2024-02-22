@@ -61,7 +61,7 @@ body {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   background-color: #31363c;
   position: fixed;
   right: 0;
@@ -120,7 +120,7 @@ body {
   padding: none;
   margin: none;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -258,7 +258,7 @@ body {
   height: 100%;
   width: 100%;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -877,7 +877,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 2rem;
   gap: 5rem;
@@ -1196,7 +1196,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 5px;
   border-radius: 1rem;
@@ -1240,7 +1240,7 @@ body {
   padding: 1px;
   margin: 0;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   color: #29a587;
   font-family: 'Rowdies', sans-serif;
   font-weight: 300;
@@ -1253,7 +1253,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   color: #fff;
   font-family: 'Rowdies', sans-serif;
   font-weight: 300;
@@ -1274,7 +1274,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-evenly;
   gap: 10px;
 }
@@ -1614,7 +1614,7 @@ body {
   height: 100%;
   margin-left: 5rem;
   text-align: center;
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1653,7 +1653,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .contact
@@ -1714,7 +1714,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .contact
@@ -1795,7 +1795,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .contact
@@ -1870,7 +1870,7 @@ body {
 .contact .contact-Bottom .contact-Right-Side .form .subject-Wrap {
   display: flex;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   width: 80%;
   height: 15%;
@@ -1946,7 +1946,7 @@ body {
 .contact .contact-Bottom .contact-Right-Side .form .message-Wrap {
   display: flex;
   text-align: start;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   width: 80%;
   height: 30%;

@@ -14,7 +14,7 @@ const Footer = () => {
             <i id="footer-Icon" className="fa-brands fa-github"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/ameer-ameen-82314425b/"
+            href="https://www.linkedin.com/in/mohammed-ameen-82314425b/"
             target="_blank"
             rel="noopener noreferrer"
           >
