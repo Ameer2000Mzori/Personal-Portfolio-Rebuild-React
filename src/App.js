@@ -1,4 +1,3 @@
-import react from 'react'
 import Navbar from './components/NavBar.jsx'
 import Header from './components/pages/Header.jsx'
 import Skills from './components/pages/Skills.jsx'
