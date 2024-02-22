@@ -54,6 +54,7 @@ const Header = () => {
                   className="down-Btn"
                   href="https://drive.google.com/file/d/18dNjSJzkHlaf03X3ZKVyZeimaPwqS9AO/view?usp=sharing"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   DOWNLOAD CV
                 </a>
